@@ -7,7 +7,6 @@ export default function Home() {
     <> 
 <section className="px-4 sm:px-6 lg:px-10 py-10">
   <div className="max-w-7xl mx-auto py-8">
-    {/* Compact header with description */}
     <div className="mb-6">
       <div className="flex flex-col gap-4 lg:flex-row justify-between items-start lg:items-center">
         <div className="flex-1">
@@ -21,7 +20,7 @@ export default function Home() {
 
         <div className="w-full sm:w-auto">
           <a 
-            href="#all-courses" 
+            href="#" 
             className="block text-center text-teal-700 hover:text-teal-600 border-2 border-teal-700 hover:border-teal-600 px-5 py-2 rounded-lg font-medium text-sm w-full sm:w-auto"
           >
             View all courses →
@@ -47,10 +46,9 @@ export default function Home() {
           </p>
         </div>
         
-        {/* زر متجاوب 100% */}
         <div className="w-full sm:w-auto">
           <a 
-            href="#all-courses" 
+            href="#" 
             className="block text-center text-teal-700 hover:text-teal-600 border-2 border-teal-700 hover:border-teal-600 px-5 py-2 rounded-lg font-medium text-sm w-full sm:w-auto"
           >
             View all courses →
@@ -60,7 +58,6 @@ export default function Home() {
     </div>
   </div>
 
-  {/* شبكة المحاضرين */}
   <TrainersGrid />  
 </section>
     </>
