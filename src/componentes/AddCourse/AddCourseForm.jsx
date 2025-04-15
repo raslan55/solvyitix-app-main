@@ -48,7 +48,7 @@ const AddCourseForm = () => {
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors); // Set errors if there are validation issues
-      toast.error("Please fill out all fields correctly!"); // Show error toast
+   
     } else {
       addCourse(course); // Add the course using the function
       setCourse({ title: "", description: "", price: "", image: "" }); // Clear the form data after submission

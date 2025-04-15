@@ -3,8 +3,7 @@ import myImage from "../assets/images/undraw_online-learning_tgmv.png";
 import Logo from "../assets/images/Solvytix_Logo.png";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -31,10 +30,6 @@ export default function Login() {
 
     setErrors(newErrors);
 
-    // if there's any error, show a toast
-    if (Object.keys(newErrors).length > 0) {
-      toast.error("Please correct the errors before submitting.");
-    }
 
     return Object.keys(newErrors).length === 0;
   };
@@ -46,7 +41,7 @@ export default function Login() {
       // simulate login success
       localStorage.setItem("userEmail", email);
       localStorage.setItem("userPassword", password);
-      toast.success("Login successful!");
+   
       setTimeout(() => {
         navigate("/home");
       }, 1500);
@@ -55,7 +50,7 @@ export default function Login() {
 
   return (
     <>
-      <ToastContainer />
+
       <section className="flex justify-center items-center min-h-screen bg-gray-50 px-4 md:px-10 py-10">
   <div className="flex flex-col md:flex-row bg-white shadow-xl rounded-xl overflow-hidden w-full max-w-screen-lg mx-auto">
     {/* Left Side: Form */}
