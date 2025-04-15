@@ -21,7 +21,7 @@ export default function Home() {
         <div className="w-full sm:w-auto">
           <a 
             href="#" 
-            className="block text-center text-teal-700 hover:text-teal-600 border-2 border-teal-700 hover:border-teal-600 px-5 py-2 rounded-lg font-medium text-sm w-full sm:w-auto"
+            className="block text-center text-[#008080] hover:text-teal-600 border-2 border-[#008080] hover:border-teal-600 px-5 py-2 rounded-lg font-medium text-sm w-full sm:w-auto"
           >
             View all courses →
           </a>
@@ -49,7 +49,7 @@ export default function Home() {
         <div className="w-full sm:w-auto">
           <a 
             href="#" 
-            className="block text-center text-teal-700 hover:text-teal-600 border-2 border-teal-700 hover:border-teal-600 px-5 py-2 rounded-lg font-medium text-sm w-full sm:w-auto"
+            className="block text-center text-[#008080] hover:text-teal-600 border-2 border-[#008080] hover:border-teal-600 px-5 py-2 rounded-lg font-medium text-sm w-full sm:w-auto"
           >
             View all courses →
           </a>

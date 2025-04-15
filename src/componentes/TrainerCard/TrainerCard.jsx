@@ -16,13 +16,13 @@ const TrainerCard = ({ name, specialization, experience, rating,students,image }
     {/* Trainer Info */}
     <div className="p-4">
       <div className="flex justify-between items-start">
-        <h3 className="text-lg font-bold text-teal-800">{name}</h3>
+        <h3 className="text-lg font-bold text-[#008080]">{name}</h3>
         <span className="flex items-center bg-amber-100 text-amber-800 px-2 py-1 rounded text-sm font-medium">
           ⭐ {rating}
         </span>
       </div>
       
-      <p className="text-teal-700 font-medium mt-1">{specialization}</p>
+      <p className="text-[#008080] font-medium mt-1">{specialization}</p>
       
       <p className="text-gray-600 text-sm mt-2 line-clamp-2">
         {experience}
@@ -32,7 +32,7 @@ const TrainerCard = ({ name, specialization, experience, rating,students,image }
         <span className="text-gray-500 text-sm">
           📚 {students}+ students
         </span>
-        <button className="bg-teal-700 hover:bg-teal-600 text-white px-3 py-1 rounded text-sm font-medium transition-colors">
+        <button className="bg-[#008080] hover:bg-teal-600 text-white px-3 py-1 rounded text-sm font-medium transition-colors">
           View Profile
         </button>
       </div>

@@ -10,14 +10,14 @@ export default function MainNav() {
   const navLinkClass = ({ isActive }) =>
     `px-3 py-2 text-sm transition-all duration-200 ${
       isActive
-        ? "text-teal-700 font-semibold border-b-2 border-teal-700" 
-        : "text-gray-700 dark:text-white hover:text-teal-700" 
+        ? "text-[#008080] font-semibold border-b-2 border-[#008080]" 
+        : "text-gray-700 dark:text-white hover:text-[#008080]" 
     }`;
   return (
     <Navbar fluid rounded  className="sticky top-0 z-50 shadow-md" >
     <NavbarBrand >
     <Link to="/Home">
-    <img src={IMG} className="mr-3 h-20 w-auto" alt="App Logo" />
+    <img src={IMG} className="mr-3 h-10 w-auto" alt="App Logo" />
     </Link>
     </NavbarBrand>
     <div className="flex md:order-2">

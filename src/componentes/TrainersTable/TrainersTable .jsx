@@ -154,7 +154,7 @@ const TrainersTable = () => {
                     <>
                       <button
                         onClick={handleSave}
-                        className="px-4 py-1 bg-teal-700 text-white rounded hover:bg-teal-600 transition"
+                        className="px-4 py-1 bg-[#008080] text-white rounded hover:bg-teal-600 transition"
                       >
                         <MdOutlineCloudDone />
 

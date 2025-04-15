@@ -126,7 +126,7 @@ const AddCourseForm = () => {
           <div className="md:col-span-2 lg:col-span-3 flex justify-end">
             <button
               type="submit"
-              className="p-2 px-4 bg-teal-700 text-white rounded hover:bg-teal-600"
+              className="p-2 px-4 bg-[#008080] text-white rounded hover:bg-teal-600"
             >
               Add Course
             </button>

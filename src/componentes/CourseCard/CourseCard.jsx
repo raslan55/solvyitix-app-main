@@ -11,11 +11,11 @@ const CourseCard = ({ id, title, description, price, image }) => {
         <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
         <p className="text-gray-600 text-sm mb-4">{description}</p>
         <div className="flex items-center justify-between">
-          <span className="text-lg font-semibold text-teal-700">
+          <span className="text-lg font-semibold text-[#008080]">
             ${price} / session
           </span>
           <Link to={`/checkout/${id}`}>
-          <button className="text-white bg-teal-700 hover:bg-teal-600 font-medium rounded-lg text-sm px-4 py-2">
+          <button className="text-white bg-[#008080] hover:bg-teal-600 font-medium rounded-lg text-sm px-4 py-2">
             Enroll
           </button>
           </Link>

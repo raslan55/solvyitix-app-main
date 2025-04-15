@@ -101,7 +101,7 @@ export default function Login() {
 
               <Button
                 type="submit"
-                className="bg-teal-600 hover:bg-teal-500 transition-all duration-200 rounded-md"
+                className="bg-[#008080] hover:bg-teal-500 transition-all duration-200 rounded-md"
               >
                 Login
               </Button>
