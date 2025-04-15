@@ -4,7 +4,7 @@ import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle }
 import IMG from '../../assets/images/Solvytix_Logo.png';
 import { NavLink } from 'react-router-dom';
 import LogoutButton from "../LogoutButton/LogoutButton";
-
+import { Link } from "react-router-dom";
 export default function MainNav() {
 
   const navLinkClass = ({ isActive }) =>
@@ -15,9 +15,10 @@ export default function MainNav() {
     }`;
   return (
     <Navbar fluid rounded  className="sticky top-0 z-50 shadow-md" >
-    <NavbarBrand href="https://flowbite-react.com">
+    <NavbarBrand >
+    <Link to="/Home">
     <img src={IMG} className="mr-3 h-20 w-auto" alt="App Logo" />
-     
+    </Link>
     </NavbarBrand>
     <div className="flex md:order-2">
     <div className="hidden md:flex items-center gap-2">
