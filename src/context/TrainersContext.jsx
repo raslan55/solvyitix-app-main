@@ -51,7 +51,7 @@ const TrainersProvider = ({ children }) => {
     return stored ? JSON.parse(stored) : defaultTrainers;
   });
 
-  // كل ما تتغير قائمة المدربين، خزّنها
+  
   useEffect(() => {
     localStorage.setItem("trainers", JSON.stringify(trainers));
   }, [trainers]);
