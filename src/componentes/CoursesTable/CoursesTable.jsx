@@ -7,7 +7,7 @@ import { MdOutlineCloudDone } from "react-icons/md";
 import { CoursesContext } from "../../context/CoursesContext";
 
 const CoursesTable = () => {
-  const { courses, removeCourse } = useContext(CoursesContext);
+  const { courses, removeCourse,updateCourse } = useContext(CoursesContext);
   const [editingId, setEditingId] = useState(null);
   const [editedCourse, setEditedCourse] = useState({});
 
@@ -25,7 +25,7 @@ const CoursesTable = () => {
   };
 
   const handleSave = () => {
-    
+    updateCourse(editingId, editedCourse);
     setEditingId(null);
   };
 
