@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import Home from "./pages/Home";
@@ -11,34 +11,23 @@ import ProtectedRoute from "./componentes/ProtectedRoute/ProtectedRoute";
 import Checkout from "./pages/Checkout";
 import PaymentSuccess from "./componentes/PaymentSuccess/PaymentSuccess";
 
-
-let routes = createBrowserRouter([
- { index: true, element: <Login/>    },
-  {
-    path: "",
-    element: <Layout />,
-    children: [
-
-      {
-      element: <ProtectedRoute />, children: [ 
-        { path: "Home", element: <Home/>    },
-        { path: "Courses", element: <Courses /> },
-        { path: "Trainers", element: <Trainers /> },
-        { path: "Payment", element: <Payment /> },
-        {path:"/checkout/:id", element: <Checkout />},
-        {path:"/success" ,element:<PaymentSuccess />}
-      ]
-    },
-    ],
-  },
-]);
-
-
 function App() {
   return (
-    <>
-      <RouterProvider router={routes}> </RouterProvider>
-    </>
+    <HashRouter>
+      <Routes>
+        <Route index element={<Login />} />
+        <Route path="/" element={<Layout />}>
+          <Route element={<ProtectedRoute />}>
+            <Route path="Home" element={<Home />} />
+            <Route path="Courses" element={<Courses />} />
+            <Route path="Trainers" element={<Trainers />} />
+            <Route path="Payment" element={<Payment />} />
+            <Route path="checkout/:id" element={<Checkout />} />
+            <Route path="success" element={<PaymentSuccess />} />
+          </Route>
+        </Route>
+      </Routes>
+    </HashRouter>
   );
 }
 
