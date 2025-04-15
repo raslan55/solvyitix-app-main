@@ -56,62 +56,70 @@ export default function Login() {
   return (
     <>
       <ToastContainer />
-      <section className="flex justify-center items-center min-h-screen px-10 py-10">
-        <div className="flex flex-col md:flex-row w-full max-w-screen-lg mx-auto">
-          <div className="md:w-1/2 w-full px-6">
-            <img className="w-40 mb-6" src={Logo} alt="Solvytix logo" />
-            <form
-              className="flex flex-col gap-4 px-4 py-6"
-              onSubmit={handleLogin}
-            >
-              <div>
-                <div className="mb-2 block">
-                  <Label htmlFor="email1" className="capitalize">
-                    Your email
-                  </Label>
-                </div>
-                <TextInput
-                  id="email1"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Type your email"
-                />
-                {errors.email && (
-                  <p className="text-red-500 text-sm mb-2">{errors.email}</p>
-                )}
-              </div>
+      <section className="flex justify-center items-center min-h-screen bg-gray-50 px-4 md:px-10 py-10">
+  <div className="flex flex-col md:flex-row bg-white shadow-xl rounded-xl overflow-hidden w-full max-w-screen-lg mx-auto">
+    {/* Left Side: Form */}
+    <div className="md:w-1/2 w-full px-8 py-10">
+      <img className="w-36 mb-8" src={Logo} alt="Solvytix logo" />
 
-              <div>
-                <div className="mb-2 block">
-                  <Label htmlFor="password1" className="capitalize">
-                    Your password
-                  </Label>
-                </div>
-                <TextInput
-                  id="password1"
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-                {errors.password && (
-                  <p className="text-red-500 text-sm mb-4">{errors.password}</p>
-                )}
-              </div>
+      <h2 className="text-2xl font-bold text-[#008080] mb-6 capitalize">Login to your account</h2>
 
-              <Button
-                type="submit"
-                className="bg-[#008080] hover:bg-teal-500 transition-all duration-200 rounded-md"
-              >
-                Login
-              </Button>
-            </form>
-          </div>
-          <div className="md:w-1/2 w-full mt-6 md:mt-0 px-6">
-            <img src={myImage} alt="Login page illustration" />
-          </div>
+      <form className="flex flex-col gap-4" onSubmit={handleLogin}>
+        <div>
+          <Label htmlFor="email1" className="mb-1 block text-gray-700">
+            Email Address
+          </Label>
+          <TextInput
+            id="email1"
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="example@mail.com"
+            shadow
+          />
+          {errors.email && (
+            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+          )}
         </div>
-      </section>
+
+        <div>
+          <Label htmlFor="password1" className="mb-1 block text-gray-700">
+            Password
+          </Label>
+          <TextInput
+            id="password1"
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="••••••••"
+            shadow
+          />
+          {errors.password && (
+            <p className="text-red-500 text-sm mt-1">{errors.password}</p>
+          )}
+        </div>
+
+       
+
+        <Button
+          type="submit"
+          className="mt-4 bg-[#008080] hover:bg-teal-600 transition-all duration-200 rounded-md text-white font-medium"
+        >
+          Login
+        </Button>
+      </form>
+    </div>
+
+    {/* Right Side: Image */}
+    <div className="md:w-1/2 w-full border-l border-[#cccccc] flex items-center justify-center p-6">
+      <img
+        src={myImage}
+        alt="Login illustration"
+        className="w-full h-auto max-h-96 object-contain"
+      />
+    </div>
+  </div>
+</section>
     </>
   );
 }
