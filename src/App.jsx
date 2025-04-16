@@ -15,7 +15,7 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route index element={<Login />} />
+        <Route index element={<Login />}/>
         <Route path="/" element={<Layout />}>
           <Route element={<ProtectedRoute />}>
             <Route path="Home" element={<Home />} />
