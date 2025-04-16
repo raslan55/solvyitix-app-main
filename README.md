@@ -5,7 +5,7 @@
 
 ## 🚀 Live Demo
 
-[🌐 View the App on Vercel](https://solvyitix-app-main.vercel.app)
+[🌐 View the App on Vercel](https://solvyitix-raslan55s-projects.vercel.app/)
 
 ## 🛠️ Tech Stack
 
