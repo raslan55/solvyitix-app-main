@@ -19,7 +19,7 @@ export default function Home() {
             </div>
 
             <a
-              href="#"
+            
               className="inline-block text-center text-white bg-[#008080] hover:bg-teal-600 transition px-6 py-2 rounded-lg font-medium text-sm shadow-md"
             >
               View all courses →
@@ -44,7 +44,7 @@ export default function Home() {
             </div>
 
             <a
-              href="#"
+        
               className="inline-block text-center text-white bg-[#008080] hover:bg-teal-600 transition px-6 py-2 rounded-lg font-medium text-sm shadow-md"
             >
               Meet the instructors →
