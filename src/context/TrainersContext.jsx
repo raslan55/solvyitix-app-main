@@ -5,42 +5,42 @@ export const TrainersContext = createContext();
 const defaultTrainers = [
   {
     id: "1",
-    name: "Sheikh Ahmed Al-Misn",
-    specialization: "Quran Recitation & Tajweed",
-    experience: "15+ years teaching Quranic studies",
+    name: "Eng. Ahmed ",
+    specialization: "Full Stack Web Development",
+    experience: "15+ years building and teaching modern web apps",
     rating: 4.9,
     students: 1200,
-    image: "https://img.freepik.com/free-photo/medium-shot-young-man-looking-camera-vinyl-store_23-2148237235.jpg?t=st=1744556095~exp=1744559695~hmac=6834467b9f1a2af17641b03200d75f1e1cfffc972dc58539eaf293d95249d062&w=740",
+    image: "https://img.freepik.com/free-photo/medium-shot-young-man-looking-camera-vinyl-store_23-2148237235.jpg",
     courses: ["a", "b"]
   },
   {
     id: "2",
-    name: "Ustadha Fatima Khan",
-    specialization: "Quran Memorization (Hifz)",
-    experience: "10 years specializing in children's education",
+    name: "Eng. Fatima ",
+    specialization: "Python & Data Structures",
+    experience: "10 years mentoring beginners and CS students",
     rating: 4.8,
     students: 850,
-    image: "https://img.freepik.com/free-photo/medium-shot-man-holding-notebook_23-2149204749.jpg?t=st=1744556141~exp=1744559741~hmac=d2eeda8181e05f09833965d111f15374cd1c6d62c5af15142d99dcea1f4a277f&w=740",
+    image: "https://images.pexels.com/photos/8154930/pexels-photo-8154930.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     courses: ["c", "d"]
   },
   {
     id: "3",
-    name: "Mufti Ibrahim Ali",
-    specialization: "Advanced Tajweed & Qira'at",
-    experience: "Imam with 20+ years of teaching experience",
+    name: "Dr. Ibrahim Ali",
+    specialization: "Algorithms & System Design",
+    experience: "20+ years in academia and industry",
     rating: 5.0,
     students: 2000,
-    image: "https://img.freepik.com/free-photo/smiling-showing-thumb-up-male-teacher-wearing-glasses-holding-abacus-sitting-table-with-school-tools-classroom_141793-113949.jpg?t=st=1744556177~exp=1744559777~hmac=7205ede73a07cc9185672d8053c2ae89c002e95c53ae9442300330f5375ddcbf&w=740",
+    image: "https://img.freepik.com/free-photo/smiling-showing-thumb-up-male-teacher-wearing-glasses-holding-abacus-sitting-table-with-school-tools-classroom_141793-113949.jpg",
     courses: ["b"]
   },
   {
     id: "4",
-    name: "Ustadha Aisha Rahman",
-    specialization: "Quran Basics for Beginners",
-    experience: "5 years teaching new Muslims",
+    name: "Eng. Mohamed ",
+    specialization: "Intro to Programming",
+    experience: "5 years helping absolute beginners get started",
     rating: 4.7,
     students: 500,
-    image: "https://img.freepik.com/free-photo/happy-smiling-young-male-teacher-sitting-school-desk-with-books-notes-holding-pencil-front-blackboard-classroom_141793-98933.jpg?t=st=1744556232~exp=1744559832~hmac=5066fd9e25dbce95b5a718acd6ba81e7ee1920cfe128b16c6c25c5da2cbb38c5&w=740",
+    image: "https://img.freepik.com/free-photo/happy-smiling-young-male-teacher-sitting-school-desk-with-books-notes-holding-pencil-front-blackboard-classroom_141793-98933.jpg",
     courses: ["a"]
   }
 ];

@@ -11,11 +11,11 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-10">
             <div className="flex-1">
               <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                 Featured Quran Courses
+              Featured Tech Courses
+
               </h2>
               <p className="text-gray-600 text-sm sm:text-base max-w-2xl">
-                Master the Holy Quran with our expert-led courses. Suitable for all levels – from beginner to advanced memorization.
-              </p>
+              Level up your tech skills with expert-led courses. Whether you're a beginner or aiming for advanced development, we’ve got something for you.              </p>
             </div>
 
             <a
@@ -36,11 +36,11 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-10">
             <div className="flex-1">
               <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                 Quran Instructors
+              Tech Instructors
+
               </h2>
               <p className="text-gray-600 text-sm sm:text-base max-w-2xl">
-                Learn from certified scholars and Huffaz. Get personalized guidance to perfect your recitation and memorization.
-              </p>
+              Learn from industry professionals and certified experts. Get personalized guidance to sharpen your coding, design, and development skills.              </p>
             </div>
 
             <a
