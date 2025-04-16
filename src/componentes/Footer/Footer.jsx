@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
 import { Footer , FooterCopyright} from "flowbite-react";
 
 export default function MainFooter() {
-  const [first, setfirst] = useState(0);
 
-  useEffect(() => {}, []);
 
   return (
     <>

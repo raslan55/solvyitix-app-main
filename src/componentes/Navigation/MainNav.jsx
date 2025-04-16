@@ -1,6 +1,6 @@
 
 
-import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
+import {  Navbar, NavbarBrand, NavbarCollapse, NavbarToggle } from "flowbite-react";
 import IMG from '../../assets/images/Solvytix_Logo.png';
 import { NavLink } from 'react-router-dom';
 import LogoutButton from "../LogoutButton/LogoutButton";
